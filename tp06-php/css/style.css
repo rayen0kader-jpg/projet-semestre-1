@@ -1,0 +1,10 @@
+body{font-family:Arial,sans-serif;max-width:900px;margin:30px auto;padding:0 16px;color:#222}
+h1{color:#1f3a5f}
+form label{display:block;margin-top:12px}
+form input,form select{padding:6px;width:100%;max-width:320px}
+button{margin-top:14px;padding:8px 16px;cursor:pointer}
+table{border-collapse:collapse;margin-top:16px}
+th,td{border:1px solid #999;padding:8px}
+th{background:#eef}
+.erreur{color:#b00020}.succes{color:#117a2f}
+nav a{margin-right:12px}

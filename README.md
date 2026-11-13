@@ -1,22 +1,14 @@
-# TP1 - Prise en main de PHP
+# Développement Web côté serveur — TP PHP
 
-## 1. Environnement
+| Dossier | Sujet |
+|---------|-------|
+| `tp01-php` | Prise en main de PHP |
+| `tp02-php` | Tableaux et fonctions |
+| `tp03-php` | Formulaires, GET/POST et validation |
+| `tp04-php` | Sessions, cookies et authentification |
+| `tp05-php` | MySQL/MariaDB et PDO |
+| `tp06-php` | Authentification en base de données et protection des pages |
 
-- Système d'exploitation : Ubuntu 26.04.1 LTS
-- Version de PHP : 8.5.4
-
-## 2. Commandes utilisées
-
-- `lsb_release -a` : affiche la version d'Ubuntu.
-- `sudo apt update` : actualise la liste des paquets disponibles.
-- `sudo apt install php` : installe PHP.
-- `php --version` : affiche la version de PHP.
-- `php -S localhost:8000` : démarre le serveur web intégré de PHP.
-
-## 3. Premier programme PHP
-
-Le fichier `exercices/index.php` affiche un message avec `echo`.
-
-## 4. Page web PHP
-
-Le fichier `index.php` contient du HTML et du PHP. Il affiche un titre et un message généré par PHP.
+Chaque TP se lance depuis son dossier avec `php -S localhost:8000`.
+Les TP 5 et 6 nécessitent une base MySQL : voir le README de chaque dossier
+(importer `database.sql`, puis copier le fichier `*.example.php` de connexion et renseigner vos identifiants).
