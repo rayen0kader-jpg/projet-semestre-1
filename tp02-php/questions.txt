@@ -1,0 +1,30 @@
+Questions de réflexion - TP2
+
+1. Pourquoi utiliser un tableau plutôt que $etudiant1, $etudiant2, etc. ?
+Un tableau regroupe les données dans une seule variable. On peut le parcourir avec une boucle,
+connaître sa taille avec count(), ajouter ou supprimer des éléments, et passer tous les étudiants
+à une fonction en un seul paramètre. Avec $etudiant1, $etudiant2..., le code serait répétitif,
+impossible à parcourir automatiquement et à modifier si le nombre d'étudiants change.
+
+2. Quelle différence entre $etudiants[0] et $etudiant["nom"] ?
+$etudiants[0] est un accès par indice numérique dans un tableau indexé : il donne le premier
+élément (ici un étudiant entier). $etudiant["nom"] est un accès par clé dans un tableau
+associatif : il donne la valeur associée à la clé "nom". On combine les deux :
+$etudiants[0]["nom"] donne le nom du premier étudiant.
+
+3. Pourquoi une fonction améliore-t-elle la réutilisation du code ?
+On écrit la logique une seule fois puis on l'appelle autant de fois que nécessaire avec des
+paramètres différents. Le code est plus court, plus lisible, plus facile à tester, et une
+correction faite dans la fonction profite à tous les endroits où elle est utilisée.
+
+4. Quelle différence entre echo et return ?
+echo affiche directement du texte dans la sortie (navigateur) et la fonction ne renvoie rien
+d'utilisable. return renvoie une valeur à l'appelant, qui peut la stocker dans une variable,
+la calculer avec d'autres valeurs, la tester dans un if ou l'afficher plus tard. return met
+aussi fin à l'exécution de la fonction. Une fonction avec return est plus réutilisable.
+
+5. Pourquoi séparer les fonctions dans un fichier ?
+Cela organise le projet : les fonctions sont écrites une fois dans fonctions.php et incluses
+avec require_once dans plusieurs pages. Le code des pages reste court, la maintenance est plus
+simple, et il n'y a pas de duplication. require_once évite aussi d'inclure le fichier deux fois
+(ce qui provoquerait une erreur de redéclaration de fonction).
